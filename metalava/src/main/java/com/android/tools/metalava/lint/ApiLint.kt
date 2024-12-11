@@ -281,7 +281,7 @@ private constructor(
         /** Compute the maximum [Severity] of issues on [item]. */
         private fun computeMaximumSeverity(item: Item?, previousItem: Item?, issue: Issue) =
             when {
-                issue == Issues.UNFLAGGED_API -> Severity.ERROR
+                issue == Issues.UNFLAGGED_API -> Severity.INFO
                 // If the issue is being reported on the context Item then use its maximum.
                 item === contextItem -> maximumSeverityForItem
                 // If its containing item was previously released (so issues are hidden) but the
