@@ -105,7 +105,7 @@ class FilteringReporter(
             // previously released API because they are being reported because there is a change
             // compared with the previously released API.
             issue == Issues.UNFLAGGED_API || issue == Issues.UNEXPORTED_FLAGGED_API -> {
-                Severity.ERROR
+                Severity.INFO
             }
 
             // If the issue is being reported on the [contextItem] then limit this to the maximum
